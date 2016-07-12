@@ -1,5 +1,16 @@
 # tomplate
-Super simple go template application
+Super simple go template application.
+
+## Installation
+```
+# brew install go
+go get github.com/Whitespace/tomplate
+```
+
+## Usage
+```
+tomplate values.yaml template.txt
+```
 
 ## Author
 Written by this guy:
