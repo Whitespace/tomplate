@@ -11,8 +11,6 @@ import (
 func main() {
   // Read in data
   valuesfile, err := os.Args[1]
-  if err != nil { log.Fatal(err) }
-
   valuesdata, err := ioutil.ReadFile(valuesfile)
   if err != nil { log.Fatal(err) }
 
@@ -23,8 +21,6 @@ func main() {
 
   // Read in template
   templatefile, err := os.Args[2]
-  if err != nil { log.Fatal(err) }
-
   templatedata, err := ioutil.ReadFile(templatefile)
   if err != nil { log.Fatal(err) }
 
