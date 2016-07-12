@@ -9,8 +9,14 @@ import (
 )
 
 func main() {
+  // Usage info
+  if len(os.Args) < 3 {
+    log.Print("Usage: tomplate values.yaml template.txt")
+    return
+  }
+
   // Read in data
-  valuesfile, err := os.Args[1]
+  valuesfile := os.Args[1]
   valuesdata, err := ioutil.ReadFile(valuesfile)
   if err != nil { log.Fatal(err) }
 
@@ -20,7 +26,7 @@ func main() {
   if err != nil { log.Fatal(err) }
 
   // Read in template
-  templatefile, err := os.Args[2]
+  templatefile := os.Args[2]
   templatedata, err := ioutil.ReadFile(templatefile)
   if err != nil { log.Fatal(err) }
 
