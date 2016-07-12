@@ -1,5 +1,8 @@
-package: github.com/WeConnect/tomplate
-homepage: https://www.github.com/WeConnect/tomplate
-license: tomplate
+package: github.com/Whitespace/tomplate
+homepage: https://github.com/Whitespace/tomplate
+license: MIT
+owners:
+- name: Tom Clark
+  email: whitespace@gmail.com
 import:
 - package: gopkg.in/yaml.v2
