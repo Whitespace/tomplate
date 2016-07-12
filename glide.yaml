@@ -1,0 +1,5 @@
+package: github.com/WeConnect/tomplate
+homepage: https://www.github.com/WeConnect/tomplate
+license: tomplate
+import:
+- package: gopkg.in/yaml.v2
